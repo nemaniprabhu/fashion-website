@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container mt-4">
+  <div class="card shadow p-4">
+
+    <h2 class="mb-4">🛒 Your Shopping Cart</h2>
+
+    {% if cart %}
+      <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>No.</th>
+            <th>Product</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for item in cart %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ item }}</td>
+            <td>
+              <a href="/remove/{{ item }}" class="btn btn-danger btn-sm">Remove</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <h4>Total Items: {{ cart|length }}</h4>
+
+      <a href="/home" class="btn btn-dark mt-3">Continue Shopping</a>
+      <a href="/checkout" class="btn btn-success mt-3">Checkout</a>
+    {% else %}
+      <div class="text-center p-5">
+        <h3>Cart is Empty 😢</h3>
+        <p>Add products from Men, Women, or Kids collection.</p>
+        <a href="/home" class="btn btn-warning">Start Shopping</a>
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+.carousel-item img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card img{
+    object-fit: cover;
+}
+.offer-card{
+    border-radius: 15px;
+    color: white;
+    padding: 25px;
+}
+</style>
+
+<!-- SEARCH BAR -->
+<form action="/search" method="GET" class="mb-4">
+  <div class="input-group">
+    <input type="text" name="q" class="form-control form-control-lg" placeholder="🔍 Search for clothes, shoes, offers..." required>
+    <button class="btn btn-dark">Search</button>
+  </div>
+</form>
+
+<!-- NEW ARRIVALS SLIDER -->
+<h3 class="mb-3">🔥 New Arrivals</h3>
+
+<div id="carouselExample" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="static/images/banner1.avif"
+     class="d-block w-100"
+     style="height:500px; object-fit:cover;">
+    </div>
+
+    <div class="carousel-item active">
+      <img src="static/images/banner2.jpg"
+     class="d-block w-100"
+     style="height:500px; object-fit:cover;">
+    </div>
+
+    <div class="carousel-item active">
+      <img src="static/images/banner3.jpg"
+     class="d-block w-100"
+     style="height:500px; object-fit:cover;">
+    </div>
+
+    <div class="carousel-item active">
+      <img src="static/images/banner4.png"
+     class="d-block w-100"
+     style="height:500px; object-fit:cover;">
+    </div>
+   
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- OFFERS SECTION -->
+<h3 class="mb-4">🎁 Today’s Offers</h3>
+
+<div class="row mb-5">
+  <div class="col-md-4">
+    <div class="offer-card bg-danger shadow">
+      <h3>50% OFF</h3>
+      <p>On Men’s Fashion</p>
+      <a href="/men" class="btn btn-light">Shop Men</a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="offer-card bg-primary shadow">
+      <h3>Buy 1 Get 1</h3>
+      <p>On Women’s Collection</p>
+      <a href="/women" class="btn btn-light">Shop Women</a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="offer-card bg-success shadow">
+      <h3>Free Delivery</h3>
+      <p>On Kids Wear</p>
+      <a href="/kids" class="btn btn-light">Shop Kids</a>
+    </div>
+  </div>
+</div>
+
+<!-- SHOP BY CATEGORY -->
+<h3 class="mb-4">🛍 Shop by Category</h3>
+
+<div class="row mb-5">
+
+  <div class="col-md-4">
+    <div class="card shadow">
+      <img src="static/images/men.jpg" height="500">
+      <div class="card-body text-center">
+        <h4>Men Collection 👔</h4>
+        <a href="/men" class="btn btn-dark">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b" height="500">
+      <div class="card-body text-center">
+        <h4>Women Collection 👗</h4>
+        <a href="/women" class="btn btn-dark">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow">
+      <img src="static/images/kids.jpg" height="500">
+      <div class="card-body text-center">
+        <h4>Kids Collection 🧸</h4>
+        <a href="/kids" class="btn btn-dark">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<h3 class="mb-4">⭐ Featured Products</h3>
+
+<div class="row mb-5">
+
+  <div class="col-md-3">
+    <div class="card shadow">
+      <img src="static/images/denimjacket.webp" height="500">
+      <div class="card-body text-center">
+        <h5>Denim Jacket</h5>
+        <p>₹1499</p>
+        <a href="/add_to_cart/Denim Jacket" class="btn btn-warning btn-sm">Add Cart</a>
+        <a href="/add_wishlist/Denim Jacket" class="btn btn-outline-danger btn-sm">♡ Wishlist</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card shadow">
+      <img src="static/images/Tshirts.webp" height="500">
+      <div class="card-body text-center">
+        <h5>Casual T-Shirt</h5>
+        <p>₹599</p>
+        <a href="/add_to_cart/Casual T-Shirt" class="btn btn-warning btn-sm">Add Cart</a>
+        <a href="/add_wishlist/Casual T-Shirt" class="btn btn-outline-danger btn-sm">♡ Wishlist</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card shadow">
+      <img src="static/images/womendress.jpg" height="500">
+      <div class="card-body text-center">
+        <h5>Women Dress</h5>
+        <p>₹999</p>
+        <a href="/add_to_cart/Women Dress" class="btn btn-warning btn-sm">Add Cart</a>
+        <a href="/add_wishlist/Women Dress" class="btn btn-outline-danger btn-sm">♡ Wishlist</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card shadow">
+      <img src="static/images/kidshoddie.webp" height="500">
+      <div class="card-body text-center">
+        <h5>Kids Hoodie</h5>
+        <p>₹699</p>
+        <a href="/add_to_cart/Kids Hoodie" class="btn btn-warning btn-sm">Add Cart</a>
+        <a href="/add_wishlist/Kids Hoodie" class="btn btn-outline-danger btn-sm">♡ Wishlist</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

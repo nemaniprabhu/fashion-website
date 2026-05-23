@@ -1,0 +1,351 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    height:300px;
+    object-fit:cover;
+}
+
+.price{
+    color:green;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.btn-cart{
+    background:black;
+    color:white;
+    border:none;
+    border-radius:10px;
+    width:100%;
+}
+
+.btn-cart:hover{
+    background:#ff3f6c;
+    color:white;
+}
+</style>
+
+<h2 class="mb-4 fw-bold">👔 Men's Collection</h2>
+
+<div class="row g-4">
+
+  <!-- Product 1 -->
+  <div class="col-md-3 col-6">
+    <div class="card shadow-sm">
+      <img src="static/images/casualtshirt.jpg"
+           class="card-img-top">
+
+      <div class="card-body text-center">
+        <h6>Casual T-Shirt</h6>
+        <p class="price">₹599</p>
+
+        <a href="/add_to_cart/Men T-Shirt"
+           class="btn btn-cart">
+           Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="col-md-3 col-6">
+    <div class="card shadow-sm">
+      <img src="static/images/denimwear.webp"
+           class="card-img-top">
+
+      <div class="card-body text-center">
+        <h6>Denim Jacket</h6>
+        <p class="price">₹1499</p>
+
+        <a href="/add_to_cart/Denim Jacket"
+           class="btn btn-cart">
+           Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="col-md-3 col-6">
+    <div class="card shadow-sm">
+      <img src="static/images/formalshirts.jpg"
+           class="card-img-top">
+
+      <div class="card-body text-center">
+        <h6>Formal Shirt</h6>
+        <p class="price">₹899</p>
+
+        <a href="/add_to_cart/Formal Shirt"
+           class="btn btn-cart">
+           Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="col-md-3 col-6">
+    <div class="card shadow-sm">
+      <img src="static/images/hoodie.jpg"
+           class="card-img-top">
+
+      <div class="card-body text-center">
+        <h6>Hoodie</h6>
+        <p class="price">₹799</p>
+
+        <a href="/add_to_cart/Hoodie"
+           class="btn btn-cart">
+            Add to Cart
+           </a>
+    </div>
+
+  </div>
+</div>
+
+           <!-- Product 5 -->
+<div class="col-md-3 col-6">
+  <div class="card shadow-sm">
+
+    <img src="static/images/stylishblazzer.jpg"
+         class="card-img-top">
+
+    <div class="card-body text-center">
+      <h6>Stylish Blazer</h6>
+      <p class="price">₹1999</p>
+
+      <a href="/add_to_cart/Blazer"
+         class="btn btn-cart">
+         Add to Cart
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product 6 -->
+<div class="col-md-3 col-6">
+  <div class="card shadow-sm">
+
+    <img src="static/images/suit.jpg"
+         class="card-img-top">
+
+    <div class="card-body text-center">
+      <h6>Men Suit</h6>
+      <p class="price">₹2499</p>
+
+      <a href="/add_to_cart/Men Suit"
+         class="btn btn-cart">
+         Add to Cart
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product 7 -->
+<div class="col-md-3 col-6">
+  <div class="card shadow-sm">
+
+    <img src="static/images/winterjacket.webp"
+         class="card-img-top">
+
+    <div class="card-body text-center">
+      <h6>Winter Jacket</h6>
+      <p class="price">₹1799</p>
+
+      <a href="/add_to_cart/Winter Jacket"
+         class="btn btn-cart">
+         Add to Cart
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product 8 -->
+<div class="col-md-3 col-6">
+  <div class="card shadow-sm">
+
+    <img src="static/images/blackhoodie.jpg"
+         class="card-img-top">
+
+    <div class="card-body text-center">
+      <h6>Black Hoodie</h6>
+      <p class="price">₹999</p>
+
+      <a href="/add_to_cart/Black Hoodie"
+         class="btn btn-cart">
+         Add to Cart
+      </a>
+    </div>
+
+  </div>
+</div>
+
+ <!-- Product 9-->
+<div class="col-md-3 col-6">
+    <div class="card shadow-sm">
+      <img src="static/images/denims.jpg"
+           class="card-img-top">
+
+      <div class="card-body text-center">
+        <h6>Denim</h6>
+        <p class="price">₹999</p>
+
+        <a href="/add_to_cart/Men T-Shirt"
+           class="btn btn-cart">
+           Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="col-md-3 col-6">
+    <div class="card shadow-sm">
+      <img src="static/images/foemalpant.jpg"
+           class="card-img-top">
+
+      <div class="card-body text-center">
+        <h6>Formal Pant</h6>
+        <p class="price">₹1499</p>
+
+        <a href="/add_to_cart/Denim Jacket"
+           class="btn btn-cart">
+           Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 11 -->
+  <div class="col-md-3 col-6">
+    <div class="card shadow-sm">
+      <img src="static/images/cargopant.webp"
+           class="card-img-top">
+
+      <div class="card-body text-center">
+        <h6>Cargo Pant</h6>
+        <p class="price">₹899</p>
+
+        <a href="/add_to_cart/Formal Shirt"
+           class="btn btn-cart">
+           Add to Cart
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product 12 -->
+  <div class="col-md-3 col-6">
+    <div class="card shadow-sm">
+      <img src="static/images/trousers.jpg"
+           class="card-img-top">
+
+      <div class="card-body text-center">
+        <h6>Trousers</h6>
+        <p class="price">₹799</p>
+
+        <a href="/add_to_cart/Hoodie"
+           class="btn btn-cart">
+            Add to Cart
+           </a>
+    </div>
+
+  </div>
+</div>
+
+           <!-- Product 13 -->
+<div class="col-md-3 col-6">
+  <div class="card shadow-sm">
+
+    <img src="static/images/shorts.jpg"
+    class="card-img-top">
+
+    <div class="card-body text-center">
+      <h6>Shorts</h6>
+      <p class="price">₹499</p>
+
+      <a href="/add_to_cart/Blazer"
+         class="btn btn-cart">
+         Add to Cart
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product 14 -->
+<div class="col-md-3 col-6">
+  <div class="card shadow-sm">
+
+    <img src="static/images/ethnicwear.jpg"
+         class="card-img-top">
+
+    <div class="card-body text-center">
+      <h6>Ethnic Wear</h6>
+      <p class="price">₹2499</p>
+
+      <a href="/add_to_cart/Men Suit"
+         class="btn btn-cart">
+         Add to Cart
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product 15 -->
+<div class="col-md-3 col-6">
+  <div class="card shadow-sm">
+
+    <img src="static/images/leninpants.jpg"
+         class="card-img-top">
+
+    <div class="card-body text-center">
+      <h6>Lenin pants</h6>
+      <p class="price">₹1799</p>
+
+      <a href="/add_to_cart/Winter Jacket"
+         class="btn btn-cart">
+         Add to Cart
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product 16 -->
+<div class="col-md-3 col-6">
+  <div class="card shadow-sm">
+
+    <img src="static/images/oversizedshirts.jpg"
+         class="card-img-top">
+
+    <div class="card-body text-center">
+      <h6>OverSize Shirts</h6>
+      <p class="price">₹999</p>
+
+      <a href="/add_to_cart/Black Hoodie"
+         class="btn btn-cart">
+         Add to Cart
+      </a>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

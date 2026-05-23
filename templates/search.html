@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Search Results for "{{ query }}"</h2>
+
+{% if results %}
+  <div class="row mt-4">
+    {% for product in results %}
+      <div class="col-md-4 mb-3">
+        <div class="card shadow p-3 text-center">
+          <h4>{{ product.name }}</h4>
+          <p>{{ product.price }}</p>
+          <a href="{{ product.page }}" class="btn btn-dark">View Product</a>
+          <a href="/add_to_cart/{{ product.name }}" class="btn btn-warning mt-2">Add to Cart</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="alert alert-warning mt-4">
+    No products found 😢
+  </div>
+{% endif %}
+
+<a href="/home" class="btn btn-secondary mt-3">Back Home</a>
+
+{% endblock %}

@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+.row{
+    row-gap:30px;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-body{
+    background:#1e1e1e;
+    color:white;
+}
+
+.price{
+    color:#00cc00;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.btn-cart{
+    background:black;
+    color:white;
+    border-radius:10px;
+    width:100%;
+}
+
+.btn-cart:hover{
+    background:#ff3f6c;
+    color:white;
+}
+</style>
+
+<h2 class="mb-4 fw-bold">👗 Women's Collection</h2>
+
+<div class="row g-4">
+
+<!-- PRODUCT 1 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/summerdress.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Summer Dress</h5>
+<p class="price">₹999</p>
+<a href="/add_to_cart/Summer Dress" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/womenjacket.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Denim Jacket</h5>
+<p class="price">₹1499</p>
+<a href="/add_to_cart/Denim Jacket" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/partygown.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Party Gown</h5>
+<p class="price">₹1999</p>
+<a href="/add_to_cart/Party Gown" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/casualtop.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Casual Top</h5>
+<p class="price">₹699</p>
+<a href="/add_to_cart/Casual Top" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/womentshirt.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>T-Shirt</h5>
+<p class="price">₹899</p>
+<a href="/add_to_cart/Tshirt" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/kurtaset.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kurta Set</h5>
+<p class="price">₹1299</p>
+<a href="/add_to_cart/Kurta Set" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/denimskirt.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5> Denim Skirt</h5>
+<p class="price">₹799</p>
+<a href="/add_to_cart/Skirt" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 8 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/maxidress.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Maxi Dress</h5>
+<p class="price">₹1599</p>
+<a href="/add_to_cart/Maxi Dress" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 9 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/womenethic.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Ethnic Wear</h5>
+<p class="price">₹1399</p>
+<a href="/add_to_cart/Ethnic Wear" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 10 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/officewear.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Office Wear</h5>
+<p class="price">₹999</p>
+<a href="/add_to_cart/Office Wear" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 11 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/croptop.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Crop Top</h5>
+<p class="price">₹599</p>
+<a href="/add_to_cart/Crop Top" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 12 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/coordset.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Co-Ord Set</h5>
+<p class="price">₹1899</p>
+<a href="/add_to_cart/Co-Ord Set" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 13 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/traditionalsaree.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Traditional Saree</h5>
+<p class="price">₹2499</p>
+<a href="/add_to_cart/Saree" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 14 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/plazzopant.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Palazzo Set</h5>
+<p class="price">₹899</p>
+<a href="/add_to_cart/Palazzo Pants" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 15 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/womenhoodiejpg.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Winter Hoodie</h5>
+<p class="price">₹1299</p>
+<a href="/add_to_cart/Winter Hoodie" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 16 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/fashionblazzer.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Fashion Blazer</h5>
+<p class="price">₹2199</p>
+<a href="/add_to_cart/Fashion Blazer" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+</div>
+
+{% endblock %}

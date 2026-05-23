@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+.row{
+    row-gap:30px;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-body{
+    background:#1e1e1e;
+    color:white;
+}
+
+.price{
+    color:#00cc00;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.btn-cart{
+    background:black;
+    color:white;
+    border-radius:10px;
+    width:100%;
+}
+
+.btn-cart:hover{
+    background:#ff3f6c;
+    color:white;
+}
+</style>
+
+<h2 class="mb-4 fw-bold">🧸 Kids Collection</h2>
+
+<div class="row g-4">
+
+<!-- PRODUCT 1 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/KidsT-Shirt.webp" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids T-Shirt</h5>
+<p class="price">₹499</p>
+<a href="/add_to_cart/Kids Tshirt" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/BabyFrock.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Baby Frock</h5>
+<p class="price">₹799</p>
+<a href="/add_to_cart/Baby Frock" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/kidshoddie.webp" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids Hoodie</h5>
+<p class="price">₹999</p>
+<a href="/add_to_cart/Kids Hoodie" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/CartoonDress.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Cartoon Dress</h5>
+<p class="price">₹699</p>
+<a href="/add_to_cart/Cartoon Dress" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/KidsJeans.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids Jeans</h5>
+<p class="price">₹899</p>
+<a href="/add_to_cart/Kids Jeans" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/PartyWear.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Party Wear</h5>
+<p class="price">₹1299</p>
+<a href="/add_to_cart/Party Wear" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/WinterJacketkids.webp" class="card-img-top">
+<div class="card-body text-center">
+<h5>Winter Jacket</h5>
+<p class="price">₹1499</p>
+<a href="/add_to_cart/Winter Jacket" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 8 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/KidsShorts.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids Shorts</h5>
+<p class="price">₹599</p>
+<a href="/add_to_cart/Kids Shorts" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 9 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/SchoolUniformkids.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>School Uniform</h5>
+<p class="price">₹899</p>
+<a href="/add_to_cart/School Uniform" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 10 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/KidsCap.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids Cap</h5>
+<p class="price">₹399</p>
+<a href="/add_to_cart/Kids Cap" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 11 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/KidsShoes.webp" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids Shoes</h5>
+<p class="price">₹1199</p>
+<a href="/add_to_cart/Kids Shoes" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 12 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/KidsSweater.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids Sweater</h5>
+<p class="price">₹999</p>
+<a href="/add_to_cart/Kids Sweater" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 13 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/KidsNightSuit.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids Night Suit</h5>
+<p class="price">₹799</p>
+<a href="/add_to_cart/Kids Night Suit" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 14 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/BabyRomperkids.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Baby Romper</h5>
+<p class="price">₹699</p>
+<a href="/add_to_cart/Baby Romper" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 15 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/KidsKurta.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Kids Kurta</h5>
+<p class="price">₹1099</p>
+<a href="/add_to_cart/Kids Kurta" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 16 -->
+<div class="col-md-3 col-6">
+<div class="card shadow">
+<img src="static/images/FestivalWearkids.jpg" class="card-img-top">
+<div class="card-body text-center">
+<h5>Festival Wear</h5>
+<p class="price">₹1599</p>
+<a href="/add_to_cart/Festival Wear" class="btn btn-cart">Add to Cart</a>
+</div>
+</div>
+</div>
+
+</div>
+
+{% endblock %}

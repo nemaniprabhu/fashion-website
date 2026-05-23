@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card shadow p-4 mx-auto" style="max-width:600px;">
+  <h2 class="mb-4">Checkout 🧾</h2>
+
+  <form method="POST">
+    <input class="form-control mb-3" name="name" placeholder="Full Name" required>
+    <input class="form-control mb-3" name="phone" placeholder="Phone Number" required>
+    <textarea class="form-control mb-3" name="address" placeholder="Delivery Address" required></textarea>
+
+    <select class="form-control mb-3" name="payment" required>
+      <option>Cash on Delivery</option>
+      <option>UPI</option>
+      <option>Card Payment</option>
+    </select>
+
+    <button class="btn btn-success w-100">Place Order</button>
+  </form>
+</div>
+
+{% endblock %}
